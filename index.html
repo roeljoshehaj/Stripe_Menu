@@ -14,9 +14,9 @@
                     <button class="nav-button">Product</button>
                     <div class="popup">Explore our innovative products designed to enhance your experience.</div>
                     <div class="menu">
-                        <a href="#">Feature 1</a>
-                        <a href="#">Feature 2</a>
-                        <a href="#">Feature 3</a>
+                        <a href="#">Product 1</a>
+                        <a href="#">Product 2</a>
+                        <a href="#">Product 3</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -35,11 +35,37 @@
                         <a href="#">Support</a>
                         <a href="#">Community</a>
                         <a href="#">Blog</a>
-                    </div>
+                <li class="nav-item">
+                            <button class="nav-button">Payments</button>
+                            <div class="popup">Manage your payments and subscriptions.</div>
+                            <div class="menu">
+                                <a href="#" id="paymentBtn">Payment Platform</a>
+                            </div>
                 </li>
             </ul>
         </nav>
     </header>
+    <div id="paymentPlatform" class="payment-platform">
+        <div class="payment-content">
+            <h2>Secure Payment Options</h2>
+            <form action="#" method="post" class="payment-form">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="Enter your card number" required>
+
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="Enter CVV" required>
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Amount to pay" required>
+
+                <button type="submit">Proceed to Payment</button>
+            </form>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
